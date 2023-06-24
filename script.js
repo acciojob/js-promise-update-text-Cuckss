@@ -1,13 +1,14 @@
 //your JS code here. If required.
-function test(){
-	let prom=new Promise((resolve)=>{
+function gneratePromise(){
+	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			resolve("Hello, world!")
 		},1000)
-	});
-	prom.then((data)=>{
-		let text=document.createElement("div");
-		text.innerText=data;
-		document.body.append(text)
 	})
 }
+
+generatePromise().then((data)=>{
+	//data=Hello, world
+	const element=document.getElementById("output")
+	element.innerText(data)
+})
