@@ -9,6 +9,6 @@ function generatePromise(){
 
 generatePromise().then((data)=>{
 	//data=Hello, world
-	const element=document.getElementById("output")
-	element.innerText(data)
+	const element=document.getElementById("output");
+	element.innerText=data;
 })
