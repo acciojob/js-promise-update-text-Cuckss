@@ -1,5 +1,5 @@
 //your JS code here. If required.
-function gneratePromise(){
+function generatePromise(){
 	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			resolve("Hello, world!")
